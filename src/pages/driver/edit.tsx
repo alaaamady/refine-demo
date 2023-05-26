@@ -5,13 +5,9 @@ import { useForm } from "@refinedev/react-hook-form";
 export const DriverEdit = () => {
   const {
     saveButtonProps,
-    refineCore: { queryResult },
     register,
-    control,
     formState: { errors },
   } = useForm();
-
-  const driverData = queryResult?.data?.data;
 
   return (
     <Edit saveButtonProps={saveButtonProps}>
